@@ -4,6 +4,7 @@
 apt update
 apt upgrade -y
 apt install -y bison flex
+apt install -y quagga
 
 # clone latest iproute2
 git clone https://github.com/segment-routing/iproute2.git /tmp/iproute2

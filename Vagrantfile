@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-20.04"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.memory = "1024"
+    vb.memory = "4024"
   end
 
   config.vm.synced_folder "./scripts", "/root/scripts"
