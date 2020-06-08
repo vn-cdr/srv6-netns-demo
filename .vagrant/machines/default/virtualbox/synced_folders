@@ -1,0 +1,1 @@
+{"virtualbox":{"/root/scripts":{"guestpath":"/root/scripts","hostpath":"/Users/lark/vagrant/srv6-linux-ground/scripts","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/lark/vagrant/srv6-linux-ground","disabled":false,"__vagrantfile":true}}}

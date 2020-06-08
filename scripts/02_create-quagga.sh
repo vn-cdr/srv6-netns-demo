@@ -55,3 +55,7 @@ hostname ipv6-2
 password zebra
 ip forwarding
 EOF
+
+
+systemctl restart zebra
+systemctl status zebra
