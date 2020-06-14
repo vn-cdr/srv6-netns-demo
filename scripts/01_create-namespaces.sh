@@ -43,7 +43,6 @@ create_router_SRv6-1 () {
 
     # sysctl for router srv6-1
     ip netns exec srv6-1 sysctl net.ipv6.conf.all.forwarding=1
-    ip netns exec srv6-1 sysctl net.ipv6.conf.all.seg6_enabled=1
 }
 
 
@@ -56,7 +55,6 @@ create_router_SRv6-2 () {
 
     # sysctl for router srv6-2
     ip netns exec srv6-2 sysctl net.ipv6.conf.all.forwarding=1
-    ip netns exec srv6-2 sysctl net.ipv6.conf.all.seg6_enabled=1
 }
 
 
@@ -118,16 +116,10 @@ create_router_SRv6-3 () {
 
     # sysctl for srv6-3
     ip netns exec srv6-3 sysctl net.ipv6.conf.all.forwarding=1
-    ip netns exec srv6-3 sysctl net.ipv6.conf.all.seg6_enabled=1
 
     # seg6_enable for srv6-5 and srv6-6
     ip netns exec srv6-5 sysctl net.ipv6.conf.all.forwarding=1
-    ip netns exec srv6-5 sysctl net.ipv6.conf.all.seg6_enabled=1
-    ip netns exec srv6-5 sysctl net.ipv6.conf.veth-sr5-sr3.seg6_enabled=1
-
     ip netns exec srv6-6 sysctl net.ipv6.conf.all.forwarding=1
-    ip netns exec srv6-6 sysctl net.ipv6.conf.all.seg6_enabled=1
-    ip netns exec srv6-6 sysctl net.ipv6.conf.veth-sr6-sr3.seg6_enabled=1
 }
 
 
@@ -164,7 +156,6 @@ create_router_SRv6-4 () {
 
     # sysctl for srv6-4
     ip netns exec srv6-4 sysctl net.ipv6.conf.all.forwarding=1
-    ip netns exec srv6-4 sysctl net.ipv6.conf.all.seg6_enabled=1
 }
 
 

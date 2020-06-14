@@ -1,13 +1,8 @@
 #/bin/sh
 
-# install dependencies for building iproute2
 apt update
-# apt upgrade -y
 apt install -y bison flex
 apt install -y quagga
-
-
-
 
 # clone latest iproute2
 # git clone https://github.com/segment-routing/iproute2.git /tmp/iproute2
@@ -16,8 +11,6 @@ apt install -y quagga
 # wget https://mirrors.edge.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.7.0.tar.gz
 # tar xfv iproute2-4.18.0.tar.gz
 # cd iproute2-4.18.0
-
-
 
 # build!
 # make && make install
