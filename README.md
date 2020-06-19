@@ -20,12 +20,19 @@ $ sudo su -
 ## ping from host1 to host2
 $ ip netns exec host1 ping6 2001:db10::2
 
+## tcpdump sample
+$ ip netns exec srv6-2 tcpdump -i veth-sr2-sr3
+
 ## Demo1
-ip netns exec srv6-1 ip -6 rule add to 2001:db1::/64 lookup localsid1
+$ ip netns exec srv6-1 ip -6 rule add to 2001:db10::/64 lookup localsid1
+$ ip netns exec srv6-4 ip -6 rule add to 2001:db1::/64 lookup localsid1
 
 ## Demo2
-ip netns exec srv6-4 ip -6 rule add to 2001:db10::/64 lookup localsid2
+$ ip netns exec srv6-4 ip -6 rule add to 2001:db1::/64 lookup localsid2
 
 ## Demo3
-ip netns exec srv6-1 ip -6 rule add to 2001:db1::/64 lookup localsid2
+$ ip netns exec srv6-1 ip -6 rule add to 2001:db10::/64 lookup localsid2
+
+## Demo4
+$ ip netns exec srv6-1 ip -6 rule add to 2001:db10::/64 lookup localsid3
 ```
