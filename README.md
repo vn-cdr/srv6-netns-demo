@@ -1,4 +1,4 @@
-# srv6-linux-ground
+# srv6-netns-demo
 One touch Build SRv6 Network Namespace with vagrant
 
 # Topology
